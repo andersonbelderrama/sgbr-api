@@ -4,34 +4,50 @@ Desenvolvedor Anderson Belderrama - andersonbelderrama@gmail.com
 
 ## Ambiente Desenvolvimento e QA
 
-Efetue uma copia do modelo .env
-`.env.example` para `.env` 
+1. Efetue uma copia do modelo `.env.example` para `.env`: 
+    ```bash
+    cp .env.example .env
+    ```
 
-Instalar dependencias do composer
-```composer install```
+2. Instale as dependências do composer:
+    ```bash
+    composer install
+    ```
 
-Tip - Crie uma alias para comando sail evitando digitar ./vendor/bin/sail e digitar somente sail
-```alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'```
+    Tip - Crie um alias para o comando sail evitando digitar `./vendor/bin/sail` e digitar somente `sail`:
+    ```bash
+    alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+    ```
 
-Iniciar ambiente docker
-```./vendor/bin/sail up -d```
+3. Inicie o ambiente docker:
+    ```bash
+    sail up -d
+    ```
 
-Parar ambiente docker
-```./vendor/bin/sail down```
+4. Pare o ambiente docker:
+    ```bash
+    sail down
+    ```
 
-Gerar laravel Key
-```sail artisan key:generate```
+5. Gere a chave do Laravel:
+    ```bash
+    sail artisan key:generate
+    ```
 
-Gerar banco dados juntamente com dados fake
-```sail artisan migrate:fresh --seed```
+6. Gere o banco de dados juntamente com os dados fictícios:
+    ```bash
+    sail artisan migrate:fresh --seed
+    ```
 
-Gerar banco dados
-```sail artisan migrate```
+7. Gere o banco de dados:
+    ```bash
+    sail artisan migrate
+    ```
 
-Testes
-```bash sail test
-
-```
+8. Execute os testes:
+    ```bash
+    sail test
+    ```
 
 
 ## Informaçoes de utilização da API
@@ -55,13 +71,19 @@ Payload dos metodos criar e atualizar
 #### Listar Lugares
 
 GET
-```/api/places```
+```bash
+/api/places
+```
 
 Parametros (opcionais):
 
-```per_page = {quantidade de registros por pagina}```
+```bash 
+per_page = {quantidade de registros por pagina}
+```
 
-```filter[name] = {termo de busca}```
+```bash
+filter[name] = {termo de busca}
+```
 
 
 
@@ -69,7 +91,9 @@ Parametros (opcionais):
 
 POST
 
-```/api/places```
+```bash 
+/api/places
+```
 
 
 
@@ -77,7 +101,9 @@ POST
 
 GET
 
-```/api/places/{$id}```
+```bash
+/api/places/{$id}
+```
 
 
 
@@ -85,7 +111,9 @@ GET
 
 PUT
 
-```/api/places/{$id}```
+```bash
+/api/places/{$id}
+```
 
 
 
@@ -93,5 +121,7 @@ PUT
 
 DELETE
 
-```/api/places/{$id}```
+```bash
+/api/places/{$id}
+```
 
