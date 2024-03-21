@@ -4,6 +4,9 @@ Desenvolvedor Anderson Belderrama - andersonbelderrama@gmail.com
 
 ## Ambiente Desenvolvimento e QA
 
+Efetue uma copia do modelo .env
+`.env.example` para `.env` 
+
 Instalar dependencias do composer
 `composer install`
 
