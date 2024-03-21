@@ -29,7 +29,9 @@ Gerar banco dados
 ```sail artisan migrate```
 
 Testes
-```sail test```
+```bash sail test
+
+```
 
 
 ## Informaçoes de utilização da API
@@ -38,14 +40,12 @@ Header
 
 Payload dos metodos criar e atualizar
 ```json
-[
   {
     "name": "Shopping Eldorado",
     "slug": "shopping-eldorado-sp",
     "city": "São Paulo",
     "state": "SP"
   }
-]
 
 ```
 
