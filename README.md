@@ -33,7 +33,7 @@ Testes
 Header
 `Accept = application/json`
 
-Payload dos metodos store e update
+Payload dos metodos criar e atualizar
 ```json
 [
   {
@@ -48,36 +48,47 @@ Payload dos metodos store e update
 
 ### Endpoints
 
+
 #### Listar Lugares
 
 GET
 `/api/places`
 
-Parametros(opcionais):
+Parametros (opcionais):
+
 `per_page = {quantidade de registros por pagina}`
+
 `filter[name] = {termo de busca}`
+
 
 
 #### Criar Lugar
 
 POST
+
 `/api/places`
+
 
 
 #### Exibir Lugar
 
 GET
+
 `/api/places/{$id}`
+
 
 
 #### Atualizar Lugar
 
 PUT
+
 `/api/places/{$id}`
+
 
 
 #### Deletar Lugar
 
 DELETE
+
 `/api/places/{$id}`
 
