@@ -8,28 +8,28 @@ Efetue uma copia do modelo .env
 `.env.example` para `.env` 
 
 Instalar dependencias do composer
-`composer install`
+```composer install```
 
 Tip - Crie uma alias para comando sail evitando digitar ./vendor/bin/sail e digitar somente sail
-`alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'`
+```alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'```
 
 Iniciar ambiente docker
-`./vendor/bin/sail up -d`
+```./vendor/bin/sail up -d```
 
 Parar ambiente docker
-`./vendor/bin/sail down`
+```./vendor/bin/sail down```
 
 Gerar laravel Key
-`sail artisan key:generate`
+```sail artisan key:generate```
 
 Gerar banco dados juntamente com dados fake
-`sail artisan migrate:fresh --seed`
+```sail artisan migrate:fresh --seed```
 
 Gerar banco dados
-`sail artisan migrate`
+```sail artisan migrate```
 
 Testes
-`sail test`
+```sail test```
 
 
 ## Informaçoes de utilização da API
@@ -55,13 +55,13 @@ Payload dos metodos criar e atualizar
 #### Listar Lugares
 
 GET
-`/api/places`
+```/api/places```
 
 Parametros (opcionais):
 
-`per_page = {quantidade de registros por pagina}`
+```per_page = {quantidade de registros por pagina}```
 
-`filter[name] = {termo de busca}`
+```filter[name] = {termo de busca}```
 
 
 
@@ -69,7 +69,7 @@ Parametros (opcionais):
 
 POST
 
-`/api/places`
+```/api/places```
 
 
 
@@ -77,7 +77,7 @@ POST
 
 GET
 
-`/api/places/{$id}`
+```/api/places/{$id}```
 
 
 
@@ -85,7 +85,7 @@ GET
 
 PUT
 
-`/api/places/{$id}`
+```/api/places/{$id}```
 
 
 
@@ -93,5 +93,5 @@ PUT
 
 DELETE
 
-`/api/places/{$id}`
+```/api/places/{$id}```
 
